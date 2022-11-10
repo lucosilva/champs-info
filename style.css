@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: auto; 
+    margin: 0;  
+    padding: 0;
+}
+
+:root{
+    --color1: #F35726;
+    --color2: #1BAA7C;
+    --color3: #333333;
+    --color4: #101010;
+    --color5: #FFFFFF;
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--color3);
+}
+
+.root{
+    width: 100%;
+    height: auto;     
+    background-color: var(--color5);   
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    
+}
+.root video{
+    /* width: 100%; */
+    height: 100%;
+}
+.root .container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4.5px);
+}
+.root .container .logo{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.root .container .logo img{
+    width: 115px;
+}
+
+.root .container h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color5);
+    margin: 40px 0 0 0;
+}
+
+.root .container h2{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color2);
+    margin: 5px 0 40px 0;
+}
+
+
+.root .container .context{
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 20px;
+    
+    color: var(--color5);
+}
+
+.root .container .context p{
+    margin: 20px 0;
+    font-size: 16px;
+}
+.root .container .context span{
+    font-size: 19px;
+    margin: 5px 0;
+    color: var(--color1);
+}
+
+
+.root .container .ranking-container{
+    margin-top: 20px;
+
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+}
+
+.root .container .ranking-container h3 {
+    margin: 40px 0 20px 0;
+    color: var(--color5);
+    padding: 0 20px;
+}
+
+.root .container .ranking-container .ranking {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.root .container .ranking-container .ranking .lista-nomes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.root .container .ranking-container .ranking .lista-nomes .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color5);
+    margin-bottom: 10px;
+}
+
+.root .container .ranking-container .ranking .lista-nomes .item:nth-child(1){
+    margin-bottom: 20px;
+    color: var(--color2);
+}
+
+.root .container .ranking-container .ranking .lista-nomes .item .nome {
+    width: 120px;
+}
+
+.root .container .ranking-container .ranking .lista-nomes .item .nome .sobrenome{
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color3);
+    margin-left: 5px;
+}
+
+@media (min-width: 992px){
+    .root .container{
+        width: 100%;
+        max-width: 1920px;
+    }
+
+    .root .container .context{ 
+        width: 80%;
+        margin-top: 300px;
+    }
+
+    .root .container .ranking-container{
+        width: 80%;
+    }
+    .root .container .ranking-container .ranking{
+        width: 50%;
+    }
+
+    .root .container .logo{
+        padding: 20px 100px;
+    }
+
+    .root .container h1{
+        font-size: 44px;        
+    }
+    .root .container h2{
+        font-size: 28px;
+    }
+
+
+    .root .container .context p{
+        font-size: 22px;
+    }
+
+    .root .container .context span{
+        font-size: 24px;
+    }
+}
